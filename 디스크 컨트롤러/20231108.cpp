@@ -4,13 +4,6 @@
 
 using namespace std;
 
-/*
-1. list에 없는 것 중에 cur >= job[i][0] 있는 거 중에
-2. job[i][1]이 가장 작은 걸 찾고
-3. cur += job[i][1]; wait += cur - job[i][0]
-4. list에 i 추가
-*/
-
 bool have_number(vector<int> done, int j) {
     for (int i = 0; i < done.size(); i++) {
         if (done[i] == j)
